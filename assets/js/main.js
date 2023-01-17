@@ -238,14 +238,28 @@
     })
   });
   
-  
+  //clickable divs
   var myFunction = function() {
     let span=document.getElementsByClassName("radioTag");
+    let image=document.getElementById("img-fluid");
     for(let i=0; i<tab.length; i++){
       if(this==tab[i]){
+        if(this==tab[1]){
+          image.src="";
+          image.src="assets/img/tanjun-black.png";
+          console.log("Vsak dan je lahko moj zadnji");
+        }
+        else if(this==tab[0]){
+          image.src="";
+          image.src="assets/img/tanjun-white.png";
+        }
+        else if(this==tab[2]){
+          image.src="";
+          image.src="assets/img/tanjun-gray.png";
+        }
         this.classList.add("clicked");
         span[i].style.color="white";
-        console.log("Vsak dan je lahko moj zadnji");
+        
       }
       else{
         span[i].style.color="#ed5b5b";
@@ -253,7 +267,7 @@
       }
     }
 
-    console.log("sovrazim mojo poklicno smer");
+  
 
 };
   var myFunction2= function(){
@@ -261,7 +275,7 @@
     for(let i=0; i<tab.length; i++){
       if(this==tab[i]){
         span[i].style.color="white";
-        console.log("vnetje trebusne slinavke");
+ 
       }
     }
   }
@@ -280,10 +294,10 @@
 
   let tab=document.getElementsByClassName("box");
   for(let i=0; i<tab.length; i++){
-      tab[i].addEventListener('click', myFunction, false);
-      tab[i].addEventListener('mouseover', myFunction2, false);
-      tab[i].addEventListener('mouseout', myFunction3, false);
-    }
+    tab[i].addEventListener('click', myFunction, false);
+    tab[i].addEventListener('mouseover', myFunction2, false);
+    tab[i].addEventListener('mouseout', myFunction3, false);
+  }
   
 
   

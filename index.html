@@ -34,9 +34,43 @@
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo"><svg xmlns="http://www.w3.org/2000/svg"
-        width="1.5in" height="0.903333in"
-        viewBox="0 0 450 271">
+      <a href="index.html" class="logo"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
+      <h1>Nike Tanjun</h1>
+      <h2>Your new favourite training shoe</h2>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+          <div>
+            <img src="assets/img/tanjun-white.png" id="img-fluid" alt="nike-tanjun">
+            <svg xmlns="http://www.w3.org/2000/svg"
+        width="4.5in" height="4in"
+        viewBox="0 0 600 330">
      <path id="Neimenovano"
            fill="white" stroke="white" stroke-width="1"
            d="M 313.44,100.12
@@ -139,39 +173,8 @@
                 239.12,119.81 248.69,117.44 248.69,117.44
                 248.69,117.44 262.44,113.69 262.44,113.69
                 262.44,113.69 313.12,100.12 313.12,100.12" />
-   </svg></a>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
-      <h1>Nike Tanjun</h1>
-      <h2>Your new favourite training shoe</h2>
-      <a href="#about" class="btn-get-started scrollto">Get Started</a>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
-            <img src="assets/img/about.png" class="img-fluid" alt="nike-tanjun">
+            </svg>
+          </div>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
             <h2>Nike Tanjun</h2>
@@ -197,7 +200,7 @@
 
           <div class="col-lg-4" data-aos="fade-up">
             <div class="box clicked" id="box1">
-              <span class="radioTag" style="color: white;">White</span>
+              <span class="radioTag" style="color: white;">PNG</span>
               <input id="prod1" type="radio" name="myradio" style="opacity:0">
               <label for="prod1" class="clickable"></label>
             </div>
@@ -205,7 +208,7 @@
 
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="150">
             <div class="box" id="box">
-              <span class="radioTag">Black</span>
+              <span class="radioTag">SVG</span>
               <input id="prod2" type="radio" name="myradio" style="opacity:0">
               <label for="prod2" class="clickable"></label>
              </div>
@@ -213,7 +216,7 @@
 
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
             <div class="box" id="box1">
-              <span class="radioTag">Grey</span>
+              <span class="radioTag">BEZIER</span>
               <input id="prod3" type="radio" name="myradio" style="opacity:0">
               <label for="prod3" class="clickable"></label>
               </div>
