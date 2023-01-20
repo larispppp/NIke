@@ -242,20 +242,24 @@
   var myFunction = function() {
     let span=document.getElementsByClassName("radioTag");
     let image=document.getElementById("img-fluid");
+    let svg=document.getElementById("savage");
     for(let i=0; i<tab.length; i++){
       if(this==tab[i]){
         if(this==tab[1]){
           image.src="";
           image.src="assets/img/tanjun-black.png";
+          svg.style.visibility="visible";
           console.log("Vsak dan je lahko moj zadnji");
         }
         else if(this==tab[0]){
           image.src="";
           image.src="assets/img/tanjun-white.png";
+          svg.style.visibility="hidden";
         }
         else if(this==tab[2]){
           image.src="";
           image.src="assets/img/tanjun-gray.png";
+          svg.style.visibility="hidden";
         }
         this.classList.add("clicked");
         span[i].style.color="white";
