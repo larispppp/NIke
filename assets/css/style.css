@@ -510,6 +510,19 @@ section {
   color: #fff;
 }
 
+#img-fluid{
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+svg{
+  position: absolute;
+  right: 11px;
+  top: -2px;
+  opacity: 0.4;
+  visibility: hidden;
+}
+
 
 /*--------------------------------------------------------------
 # Services
