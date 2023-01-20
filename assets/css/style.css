@@ -517,9 +517,10 @@ section {
 }
 svg{
   position: absolute;
-  right: -52px;
-  top: 80px;
+  right: 11px;
+  top: -2px;
   opacity: 0.4;
+  visibility: hidden;
 }
 
 
