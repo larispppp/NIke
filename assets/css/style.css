@@ -511,19 +511,25 @@ section {
 }
 
 #img-fluid{
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   position: relative;
 }
 svg{
   position: absolute;
-  right: 11px;
-  top: -2px;
+  right: 145px;
+  top: 6px;
   opacity: 0.7;
   visibility: hidden;
 }
 #cnvs{
-  visibility: hidden;
+  display:none;
+  position:relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 122%;
+  margin-bottom: -27px;
+  height: auto;
 }
 
 
