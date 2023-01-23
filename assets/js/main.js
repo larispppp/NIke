@@ -196,19 +196,24 @@
         if(this==tab[0]){
           image.src="";
           image.src="assets/img/tanjun-white.png";
+          canvas.style.display="none";
+          image.style.visibility="visible";
           svg.style.visibility="hidden";
         }
         else if(this==tab[1]){
           image.src="";
           image.src="assets/img/tanjun-black.png";
           svg.style.visibility="visible";
+          canvas.style.display="none";
+          image.style.visibility="visible";
           console.log("Vsak dan je lahko moj zadnji");
         }
         
         else if(this==tab[2]){
           image.src="";
-          canvas.style.visibility="visible";
+          canvas.style.display="flex";
           svg.style.visibility="hidden";
+          image.style.visibility="hidden";
           console.log("moja biba je majhna kar me zalosti");
         }
         this.classList.add("clicked");
