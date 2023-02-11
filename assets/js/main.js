@@ -4,7 +4,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -117,7 +117,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function (e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -126,7 +126,7 @@
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.navbar .dropdown > a', function(e) {
+  on('click', '.navbar .dropdown > a', function (e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')
@@ -136,7 +136,7 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
+  on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
       e.preventDefault()
 
@@ -184,81 +184,103 @@
       mirror: false
     })
   });
-  
+
   //clickable divs
-  var myFunction = function() {
-    let span=document.getElementsByClassName("radioTag");
-    let image=document.getElementById("img-fluid");
-    let svg=document.getElementById("savage");
-    let canvas=document.getElementById("cnvs");
-    for(let i=0; i<tab.length; i++){
-      if(this==tab[i]){
-        if(this==tab[0]){
-          image.src="";
-          image.src="assets/img/tanjun-white.png";
-          canvas.style.display="none";
-          image.style.visibility="visible";
-          svg.style.visibility="hidden";
+  var myFunction = function () {
+    let span = document.getElementsByClassName("radioTag");
+    let image = document.getElementById("img-fluid");
+    let svg = document.getElementById("savage");
+    let canvas = document.getElementById("cnvs");
+    for (let i = 0; i < tab.length; i++) {
+      if (this == tab[i]) {
+        if (this == tab[0]) {
+          image.src = "";
+          image.src = "assets/img/tanjun-white.png";
+          canvas.style.display = "none";
+          image.style.visibility = "visible";
+          svg.style.visibility = "hidden";
         }
-        else if(this==tab[1]){
-          image.src="";
-          image.src="assets/img/tanjun-black.png";
-          svg.style.visibility="visible";
-          canvas.style.display="none";
-          image.style.visibility="visible";
+        else if (this == tab[1]) {
+          image.src = "";
+          image.src = "assets/img/tanjun-black.png";
+          svg.style.visibility = "visible";
+          canvas.style.display = "none";
+          image.style.visibility = "visible";
           console.log("Vsak dan je lahko moj zadnji");
         }
-        
-        else if(this==tab[2]){
-          image.src="";
-          canvas.style.display="flex";
-          svg.style.visibility="hidden";
-          image.style.visibility="hidden";
+
+        else if (this == tab[2]) {
+          image.src = "";
+          canvas.style.display = "flex";
+          svg.style.visibility = "hidden";
+          image.style.visibility = "hidden";
           console.log("moja biba je majhna kar me zalosti");
+          canvas.height=388;
+          canvas.width=508;
+          const ctx = canvas.getContext('2d');
+          let xoff=1;
+          let yoff=1;
+          drawBz(ctx,canvas,yoff,xoff);
         }
         this.classList.add("clicked");
-        span[i].style.color="white";
-        
+        span[i].style.color = "white";
+
       }
-      else{
-        span[i].style.color="#ed5b5b";
+      else {
+        span[i].style.color = "#ed5b5b";
         tab[i].classList.remove("clicked");
       }
     }
 
-  
 
-};
-  var myFunction2= function(){
-    let span=document.getElementsByClassName("radioTag");
-    for(let i=0; i<tab.length; i++){
-      if(this==tab[i]){
-        span[i].style.color="white";
- 
+
+  };
+  var myFunction2 = function () {
+    let span = document.getElementsByClassName("radioTag");
+    for (let i = 0; i < tab.length; i++) {
+      if (this == tab[i]) {
+        span[i].style.color = "white";
+
       }
     }
   }
 
-  var myFunction3= function(){
-    let span=document.getElementsByClassName("radioTag");
-    let name=this.className;
-    for(let i=0; i<tab.length; i++){
-      if(this==tab[i] && !name.includes("clicked")){ 
-        span[i].style.color="#ed5b5b";
+  var myFunction3 = function () {
+    let span = document.getElementsByClassName("radioTag");
+    let name = this.className;
+    for (let i = 0; i < tab.length; i++) {
+      if (this == tab[i] && !name.includes("clicked")) {
+        span[i].style.color = "#ed5b5b";
         console.log("otorinolaringologija");
       }
-      
+
     }
   }
 
-  let tab=document.getElementsByClassName("box");
-  for(let i=0; i<tab.length; i++){
+  let tab = document.getElementsByClassName("box");
+  for (let i = 0; i < tab.length; i++) {
     tab[i].addEventListener('click', myFunction, false);
     tab[i].addEventListener('mouseover', myFunction2, false);
     tab[i].addEventListener('mouseout', myFunction3, false);
   }
-  
 
   
+  
+
+
+
 
 })()
+function drawBz(ctx,canvas,yoff,xoff){
+  ctx.beginPath();
+  ctx.moveTo(359 + xoff, 199 + yoff);
+  ctx.bezierCurveTo(402 + xoff, 173 + yoff, 437 + xoff, 155 + yoff, 416 + xoff, 161 + yoff);
+  ctx.bezierCurveTo(402 + xoff, 166 + yoff, 389 + xoff, 170 + yoff, 363 + xoff, 180 + yoff);
+  ctx.bezierCurveTo(339 + xoff, 190 + yoff, 331 + xoff, 190 + yoff, 310 + xoff, 197 + yoff);
+  ctx.bezierCurveTo(284 + xoff, 204 + yoff, 271 + xoff, 198 + yoff, 277 + xoff, 166 + yoff);
+  ctx.bezierCurveTo(271 + xoff, 169 + yoff, 238 + xoff, 211 + yoff, 263 + xoff, 230 + yoff);
+  ctx.bezierCurveTo(277 + xoff, 237 + yoff, 294 + xoff, 230 + yoff, 306 + xoff, 225 + yoff);
+  ctx.bezierCurveTo(335 + xoff, 213 + yoff, 358 + xoff, 198 + yoff, 371 + xoff, 192 + yoff);
+  ctx.fillStyle="#ffffffb2";
+  ctx.fill();
+  }

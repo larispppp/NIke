@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<body>
+    <canvas id="cnvs" height="1000px" width="600px"></canvas>
+    <script>
+        const canvas=document.getElementById("cnvs");
+        const ctx = canvas.getContext('2d');
+          let xoff=1;
+          let yoff=1;
+          ctx.beginPath();
+          ctx.moveTo(272 + xoff, 264 + yoff);
+          ctx.bezierCurveTo(258 + xoff, 258 + yoff, 506 + xoff, 364 + yoff, 492 + xoff, 358 + yoff);
+          ctx.bezierCurveTo(483 + xoff, 370 + yoff, 576 + xoff, 245 + yoff, 567 + xoff, 257 + yoff);
+          ctx.bezierCurveTo(565 + xoff, 272 + yoff, 581 + xoff, 152 + yoff, 579 + xoff, 167 + yoff);
+          ctx.stroke();
+          ctx.fillStyle="black";
+    </script>
+</body>

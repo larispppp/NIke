@@ -527,9 +527,9 @@ svg{
   position:relative;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 122%;
-  margin-bottom: -27px;
+  max-width: 80%;
   height: auto;
+  margin-bottom: -27px;
 }
 
 
@@ -936,7 +936,8 @@ svg{
 }
 
 #footer .footer-top .footer-links {
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left:50%
 }
 
 #footer .footer-top .footer-links ul {
