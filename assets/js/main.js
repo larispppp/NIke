@@ -190,7 +190,7 @@
     let span = document.getElementsByClassName("radioTag");
     let image = document.getElementById("img-fluid");
     let svg = document.getElementById("savage");
-    let canvas = document.getElementById("cnvs");
+    let canvas = document.getElementById("knvs");
     for (let i = 0; i < tab.length; i++) {
       if (this == tab[i]) {
         if (this == tab[0]) {
