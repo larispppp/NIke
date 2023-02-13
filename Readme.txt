@@ -1,1 +1,6 @@
-Concept web page for nike using dayBootstrap template. The three shoes have logos made with a svg path and bezier curve swoosh.
+Thanks for downloading this template!
+
+Template Name: Day
+Template URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
+Author: BootstrapMade.com
+License: https://bootstrapmade.com/license/

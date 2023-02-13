@@ -144,11 +144,11 @@ h6 {
   text-transform: uppercase;
 }
 
-#header .logo a {
+#logo a {
   color: #fff;
 }
 
-#header .logo img {
+#logo img {
   max-height: 40px;
 }
 
@@ -521,6 +521,30 @@ svg{
   top: 6px;
   opacity: 0.7;
   visibility: hidden;
+}
+@media (max-width: 1399px){
+  svg{
+    right: 126px;
+    top:4px;
+  }
+}
+@media (max-width: 1199px){
+  svg{
+    right: 105px;
+    top:2px;
+  }
+}
+  @media (max-width: 991px){
+    svg{
+      right: 159px;
+      top:7px;
+    }
+}
+@media (max-width: 767px){
+  svg{
+    right: 118px;
+    top:3px;
+  }
 }
 #cnvs{
   display:none;

@@ -263,6 +263,8 @@
     tab[i].addEventListener('mouseover', myFunction2, false);
     tab[i].addEventListener('mouseout', myFunction3, false);
   }
+  var logo=document.getElementById("logo_image");
+  logo.addEventListener('click', sweetalert);
 
   
   
@@ -283,4 +285,14 @@ function drawBz(ctx,canvas,yoff,xoff){
   ctx.bezierCurveTo(335 + xoff, 213 + yoff, 358 + xoff, 198 + yoff, 371 + xoff, 192 + yoff);
   ctx.fillStyle="#ffffffb2";
   ctx.fill();
+  }
+
+  function sweetalert(){
+    Swal.fire({
+      title: 'This is my png logo!',
+      imageUrl: 'assets/img/logo.png',
+      background: '#444444',
+      color:'#ffffff',
+      imageAlt: 'Custom image',
+    })
   }
