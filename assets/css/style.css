@@ -546,7 +546,7 @@ svg{
     top:3px;
   }
 }
-#cnvs{
+#knvs{
   display:none;
   position:relative;
   background-size: contain;
@@ -554,6 +554,9 @@ svg{
   max-width: 80%;
   height: auto;
   margin-bottom: -27px;
+}
+#logo_images{
+  cursor:pointer;
 }
 
 
