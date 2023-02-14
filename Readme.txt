@@ -1,6 +1,1 @@
-Thanks for downloading this template!
-
-Template Name: Day
-Template URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Concept website for Nike using bootstrap template. The swooshes on the shoes are made with a svg image and a bezier curve. The header logo is a clickabe swoosh.
