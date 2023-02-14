@@ -545,6 +545,9 @@ svg{
     right: 118px;
     top:3px;
   }
+   .footer-links{
+    margin-left: 0% !important;
+  }
 }
 #knvs{
   display:none;
