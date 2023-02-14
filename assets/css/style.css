@@ -545,7 +545,9 @@ svg{
     right: 118px;
     top:3px;
   }
-   .footer-links{
+}
+@media (max-width:991px){
+  .footer-links{
     margin-left: 0% !important;
   }
 }
