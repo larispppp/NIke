@@ -263,7 +263,7 @@
     tab[i].addEventListener('mouseover', myFunction2, false);
     tab[i].addEventListener('mouseout', myFunction3, false);
   }
-  var logo=document.getElementById("logo_image");
+  var logo=document.getElementById("logo_images");
   logo.addEventListener('click', sweetalert);
 
   
